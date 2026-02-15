@@ -717,22 +717,30 @@ body::before {
 }
 
 .countdown {
-  display: grid;
-  grid-template-columns: 2;
-  grid-template-rows: 2;
+  display: flex;
+  justify-content: center;
   gap: 16px;
-
+  /* box-уудын хооронд зай */
+  flex-wrap: nowrap;
+  /* wrap-ийг устгалаа, бүгд 1 эгнээнд */
+  flex-flow: row nowrap;
 }
 
 .countdown-box {
+  flex: 1 1 100px;
+  /* flex-grow, flex-shrink, flex-basis */
+  max-width: 120px;
+  /* box-ийн максим хэмжээ */
   border: 2px solid rgba(201, 169, 97, 0.5);
   background: linear-gradient(135deg, rgba(201, 169, 97, 0.08) 0%, rgba(201, 169, 97, 0.02) 100%);
-  padding: 28px 24px;
-  min-width: 80px;
-  transition: all 0.4s ease;
+  padding: 28px 12px;
+  /* padding бага болгож ширхэг багасгах */
   position: relative;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+  transition: all 0.4s ease;
+  text-align: center;
 }
+
 
 .countdown-box::before,
 .countdown-box::after {
