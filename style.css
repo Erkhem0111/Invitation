@@ -291,6 +291,41 @@ body::before {
   backdrop-filter: blur(10px);
 }
 
+/* Intro title-д үндсэн decorative font хэвээр, Монгол үсэг Inter ашиглана */
+.intro-title {
+  font-family: 'Playwrite DK Loopet', 'Inter', sans-serif;
+}
+
+/* Main title */
+.main-title {
+  font-family: 'Playwrite DK Loopet', 'Inter', sans-serif;
+}
+
+/* Warm greeting */
+.warm-greeting {
+  font-family: 'Playwrite DK Loopet', 'Inter', sans-serif;
+}
+
+/* Personal message */
+.personal-message {
+  font-family: 'Moon Dance', 'Inter', sans-serif;
+}
+
+/* Recipient name */
+.recipient-name {
+  font-family: 'Playwrite DK Loopet', 'Noto Sans Mongolian', sans-serif;
+}
+
+/* Detail header text */
+.detail-header-text {
+  font-family: 'Playwrite DK Loopet', 'Inter', sans-serif;
+}
+
+/* Countdown label (optional, хэрэв Монгол үсэг хэрэглэвэл) */
+.countdown-number {
+  font-family: 'Playfair Display', 'Inter', serif;
+}
+
 /* Corner Ornaments */
 .corner-ornament {
   position: absolute;
@@ -682,17 +717,18 @@ body::before {
 }
 
 .countdown {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 2;
+  grid-template-rows: 2;
   gap: 16px;
-  flex-wrap: wrap;
+
 }
 
 .countdown-box {
   border: 2px solid rgba(201, 169, 97, 0.5);
   background: linear-gradient(135deg, rgba(201, 169, 97, 0.08) 0%, rgba(201, 169, 97, 0.02) 100%);
   padding: 28px 24px;
-  min-width: 110px;
+  min-width: 80px;
   transition: all 0.4s ease;
   position: relative;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
