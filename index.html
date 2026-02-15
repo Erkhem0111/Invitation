@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="mn">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Хөдөлмөрийн Хүндэт Медаль - Хүндэтгэлийн Мялаалга</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Playfair+Display:wght@400;600;700;800&family=Crimson+Text:wght@400;600;700&family=Playwrite+DK+Loopet:wght@100..400&family=Dancing+Script:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Moon+Dance&family=Playwrite+DK+Loopet+Guides&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <!-- Intro Screen - Folded Card -->
+  <div id="introScreen" class="screen active">
+    <div class="folded-card">
+      <div class="card-front">
+        <div class="traditional-pattern top"></div>
+
+        <div class="medal-icon">
+          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <!-- Medal SVG -->
+            <circle cx="100" cy="120" r="50" fill="none" stroke="#C9A961" stroke-width="3" />
+            <circle cx="100" cy="120" r="42" fill="none" stroke="#C9A961" stroke-width="1.5" />
+            <polygon points="100,90 107,110 128,110 111,122 118,142 100,130 82,142 89,122 72,110 93,110"
+              fill="#C9A961" />
+            <!-- Ribbon -->
+            <rect x="85" y="30" width="30" height="50" fill="#C9A961" />
+            <polygon points="85,80 100,90 115,80 115,30 85,30" fill="#A88B4A" />
+            <line x1="92" y1="30" x2="92" y2="75" stroke="#8B7239" stroke-width="1" />
+            <line x1="108" y1="30" x2="108" y2="75" stroke="#8B7239" stroke-width="1" />
+          </svg>
+        </div>
+
+        <h1 class="intro-title">Хөдөлмөрийн<br />Хүндэт Медаль</h1>
+
+        <div class="traditional-border-ornament">
+          <span>⚘</span>
+          <span class="center-flower">❀</span>
+          <span>⚘</span>
+        </div>
+
+        <p class="intro-subtitle">Хүндэтгэлийн мялаалга</p>
+        <div class="tap-hint">
+          ↓ Дарж урилгаа нээнэ ↓
+        </div>
+
+        <div class="open-invitation-btn" id="viewInviteBtn">
+          <div class="btn-icon">✉️</div>
+          <div class="btn-text">Урилга нээх</div>
+          <div class="btn-arrow">→</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Invitation Screen -->
+  <div id="invitationScreen" class="screen">
+    <div class="ornamental-border top-border"></div>
+    <div class="invitation-content">
+      <div class="decorative-frame">
+        <div class="corner-ornament tl"></div>
+        <div class="corner-ornament tr"></div>
+        <div class="corner-ornament bl"></div>
+        <div class="corner-ornament br"></div>
+
+        <div class="top-pattern"></div>
+
+        <h1 class="main-title">Хүндэтгэлийн Мялаалга</h1>
+        <div class="gold-divider-complex">
+          <span class="divider-ornament left">❖</span>
+          <span class="divider-line"></span>
+          <span class="divider-ornament center">✦</span>
+          <span class="divider-line"></span>
+          <span class="divider-ornament right">❖</span>
+        </div>
+
+        <div class="invitation-text">
+          <p class="warm-greeting">
+            Эрхэм хайрт найз нөхөд, гэр бүлийн гишүүд минь,
+          </p>
+
+          <p class="personal-message">
+            Ерөнхийлөгчийн зарлигаар "Хөдөлмөрийн Хүндэт Медаль"-иар
+            шагнагдсан баярт мөчийн цайллагандаа хүрэлцэн ирэхийг урьж байна
+          <div class=""></div>
+          </p>
+
+          <div class="name-highlight">
+            <div class="name-ornament top"></div>
+            <h2 class="recipient-name">Ж.Золзаяа</h2>
+            <div class="name-ornament bottom"></div>
+          </div>
+
+          <div class="event-details">
+            <div class="detail-header">
+              <span class="detail-icon">✦</span>
+              <span class="detail-header-text">Уулзалтын мэдээлэл</span>
+              <span class="detail-icon">✦</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">📅 Огноо:</span>
+              <span class="detail-value">[2026 оны 2-р сарын 19]</span>
+            </div>
+            <div class="detail-item">
+              <a href="https://www.google.com/maps?q=46.368755,96.254244" target="_blank" class="map-btn">
+                📍 Байршил харах
+              </a>
+
+
+            </div>
+          </div>
+        </div>
+
+        <div class="countdown-container">
+          <div class="section-divider top"></div>
+          <h3 class="countdown-title">⏳ Арга хэмжээ эхлэх хугацаа ⏳</h3>
+          <div class="countdown">
+            <div class="countdown-box">
+              <div class="countdown-number" id="days">00</div>
+              <div class="countdown-label">Өдөр</div>
+            </div>
+            <div class="countdown-box">
+              <div class="countdown-number" id="hours">00</div>
+              <div class="countdown-label">Цаг</div>
+            </div>
+            <div class="countdown-box">
+              <div class="countdown-number" id="minutes">00</div>
+              <div class="countdown-label">Минут</div>
+            </div>
+            <div class="countdown-box">
+              <div class="countdown-number" id="seconds">00</div>
+              <div class="countdown-label">Секунд</div>
+            </div>
+          </div>
+          <div class="section-divider bottom"></div>
+        </div>
+
+
+        <div class="bottom-pattern"></div>
+      </div>
+    </div>
+    <div class="ornamental-border bottom-border"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
